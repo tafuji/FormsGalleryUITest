@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF8F8980-0BDF-4439-B348-0E2D4DE1B0DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FormsGallery.UITest</RootNamespace>
+    <AssemblyName>FormsGallery.UITest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\..\packages\Xamarin.UITest.2.2.1\lib\net45\Xamarin.UITest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoxViewDemoPageTests.cs" />
+    <Compile Include="TableViewDemoPageTests.cs" />
+    <Compile Include="FrameDemoPageTests.cs" />
+    <Compile Include="ToolbarItemDemoPageTests.cs" />
+    <Compile Include="NavigationPageTests.cs" />
+    <Compile Include="EditorDemoPageTests.cs" />
+    <Compile Include="EntryDemoPageTests.cs" />
+    <Compile Include="MasterDetailPageDemoPageTest.cs" />
+    <Compile Include="PickerDemoPageTests.cs" />
+    <Compile Include="TimePickerDemoPageTests.cs" />
+    <Compile Include="ListViewDemoPageTests.cs" />
+    <Compile Include="WebViewDemoPageTests.cs" />
+    <Compile Include="TabbedPageDemoPageTests.cs" />
+    <Compile Include="ImageDemoPageTests.cs" />
+    <Compile Include="ActivityIndicatorDemoPageTests.cs" />
+    <Compile Include="CarouselPageDemoPageTests.cs" />
+    <Compile Include="ButtonDemoPageTests.cs" />
+    <Compile Include="SearchBarDemoPageTests.cs" />
+    <Compile Include="SwitchDemoPageTests.cs" />
+    <Compile Include="StepperDemoPageTests.cs" />
+    <Compile Include="SliderDemoPageTests.cs" />
+    <Compile Include="ProgressBarDemoPageTests.cs" />
+    <Compile Include="LabelDemoPageTests.cs" />
+    <Compile Include="MainPageObject.cs" />
+    <Compile Include="ReplTests.cs" />
+    <Compile Include="Tests.cs" />
+    <Compile Include="DatePickerDemoPageTests.cs" />
+    <Compile Include="AppInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
