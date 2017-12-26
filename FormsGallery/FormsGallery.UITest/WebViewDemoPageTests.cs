@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -33,19 +33,12 @@ namespace FormsGallery.UITest
             mainPage.TapTableTextCellByName("WebView");
 
             string marked = "WebViewDemoPage.WebView";
-
             if(platform == Platform.Android)
             {
-                app.WaitForElement(x => x.Marked(marked), timeout: TimeSpan.FromSeconds(30));
-                app.Query(x => x.Marked(marked).Invoke("setVisibility", 8));
-                app.WaitForNoElement(x => x.Marked(marked), timeout: TimeSpan.FromSeconds(30));
             }
             else if(platform == Platform.iOS)
             {
-
-
             }
-            app.Back();
         }
     }
 }
